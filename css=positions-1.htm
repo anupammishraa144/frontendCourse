@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sibling{
+            padding:10px;
+            background-color: white;
+        }
+        .main {
+            position: absolute;
+            left: 50px;
+            bottom: 10px;
+            background-color: yellow;
+            padding:10px;
+        }
+        .parent {
+            position:relative;
+            height:100px;
+            padding: 10px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class = "sibling">I am sibling element</div>
+        <div class = "main">I am main element</div>
+        <div class = "sibling">I am sibling element</div>
+    </div>
+</body>
+</html>

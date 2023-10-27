@@ -1,0 +1,14 @@
+element selector or type selector --- h1,h2,p,div etc ---- specificity value ---- 0001
+class selector --- .class-name ---- specificity value ---- 0010
+id selector --- #id-name ---- specificity value ---- 0100
+attribute selector === specificity value ---- 1000
+
+
+
+unset ----
+if property is inheritable , inherit from parent
+if property is not inheritable take the initial value
+
+
+revert :
+take browser (user agent style)

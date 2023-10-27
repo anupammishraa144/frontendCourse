@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #css-id{
+            color:green;
+        }
+        #css-id1{
+            color:purple;
+        }
+        h1#css-id1{
+            color:aqua;
+        }
+        .css-header{
+            color:blue;
+        }
+        h1 {
+            color:red;
+        }
+        h1.css-header{
+            color:pink;
+        }
+        h2{
+            color: navy !important;
+        }
+        #css-id2{
+            color:black;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1  id="css-id" class="css-header" style="color:yellow">Welcome to CSS Specificity</h1>
+    <h1  id="css-id1"  >Welcome to CSS Specificity</h1>
+    <h1 class="css-header">This is other example</h1>
+    <h2 id="css-id2" style="color:blueviolet">Important has highest specificity</h2>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(this);
+        var abc =1; // global or outer variable
+        function fname(){
+            var abc=2; // function or oinner variable
+            console.log("function abc = ", abc); // 2
+            console.log("global abc = ", window.abc);
+            console.log("value of this inside a global function", this)
+        }
+        fname();
+        let person = {
+            firstName : "sachin",
+            lastName : "Tendulkar" ,
+            fullName : function (){
+                console.log("this object inside function fullname is",this);
+                return this.firstName + " " + this.lastName;
+            }
+        }
+        console.log(person.fullName());
+        /*let cricketer = {
+            isBatsman: true
+        }*/
+       // cricketer.completeName = person.fullname;
+        //cricketer.completeName();
+       // console.log(abc); //1
+    </script>
+</body>
+</html>

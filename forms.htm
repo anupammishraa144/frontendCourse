@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,output,label{
+            display:block
+        }
+    </style>
+</head>
+<body>
+    <form oninput="result.value=first.value+second.value;" action="filename.php" method="post">
+        <label for "first">This is first name</label>
+        <input type="text" name="first" >
+        <br>
+
+        <label for "second">This is second name</label>
+        <input type="text" name="second" >
+        <br>
+        
+       
+         
+        <br>
+        Concatenation of 2 strings is
+        <output type="text" name="result"></output>
+
+        <input type="submit">
+
+    </form>
+</body>
+</html>

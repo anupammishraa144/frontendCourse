@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript object constructor</h1>
+    <script>
+        // console.log(this);
+        function Cricketer (firstName, lastName, age, numberOf100s)
+        {
+            this.age = age,
+            this.firstName = firstName,
+            this.lastName = lastName,
+            this.numberOf100s = numberOf100s
+        }
+        
+        const  Cricketer1 =  new Cricketer("Sachin", "Tendulkar", 48, 51);
+        console.log(Cricketer1);
+        const  Cricketer2 =  new Cricketer("Rahul", "Dravid", 49, 34);
+        console.log(Cricketer2);
+
+
+        
+    </script>
+</body>
+</html>

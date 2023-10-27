@@ -1,0 +1,30 @@
+Pseudo elements
+Pseudo classes
+CSS combinators
+
+
+
+
+Before Element 
+Element 1
+After Element 
+Element 2
+
+
+Pseudo element ---- used to style before an elemenr, or after an element or some part of an element
+
+selector::pseudo-element{ property: value;}
+
+selector:pseudo-element{ property: value;}
+
+
+Property
+
+static
+relative
+absolute
+fixed
+sticky
+
+
+position:

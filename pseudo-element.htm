@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    p::before{
+        content: "Before Element";
+        display:block;
+        color:blue;
+    }
+    p::after{
+        content: "After Element";
+        display:block;
+        color:red;
+    }
+    p::first-letter
+    {
+        color:gold;
+        font-size:xx-large;
+        font-variant: small-caps;
+    }
+   /* p
+    {
+        color:gold;
+        font-size:xx-large;
+        font-variant: small-caps;
+    }*/
+   /* span
+    {
+        color:gold;
+        font-size:xx-large;
+        font-variant: small-caps;
+    }*/
+    li::marker{
+        color:red;
+        font-size: xx-large;
+        
+    }
+</style>
+</head>
+
+<body>
+    <p>Element 1</p>
+    <p>Element 2</p>
+    <div>Below is a list</div>
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+    </ul>
+</body>
+</html>

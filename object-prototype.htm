@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Cricketer (name,runs,wickets){
+            this.name = name;
+            this.runs = runs;
+            this.wickets = wickets;
+           // this.nationality = "Indian";
+        }
+        const cricketer1 = new Cricketer("Sachin", 15000, 100);
+        document.write(cricketer1.runs);
+        document.write("<br/>");
+        const cricketer2 = new Cricketer("Dravid", 11000, 0);
+        document.write(cricketer2.runs);
+        document.write("<br/>");
+        document.write("<br/>");
+        cricketer2.catches = 200;
+        document.write(cricketer2.catches);
+        document.write("<br/>");
+        document.write(cricketer1.catches);
+
+       Cricketer.prototype.nationality = "Indian" ;
+        document.write("<br/>");
+        document.write("<br/>");
+        document.write("Nationality of cricketer 2 is");
+        document.write("<br/>");
+        document.write(cricketer2.nationality);
+
+        document.write("<br/>");
+        document.write("<br/>");
+        document.write("Nationality of cricketer 1 is");
+        document.write("<br/>");
+        document.write(cricketer1.nationality);
+       </script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to Javascript Objects</h1>
+    <script>
+        // In javascript almost everything is an object
+        // except some primitive data types string,int,boolean etc all
+        // other are objects
+        // hash map in java, c hash set, dictionary in python
+        // object is a collection of named values
+        var  number = 45;
+        const car = {
+            carName: "MAruti 800",
+            color: "Red",
+            hasAC : "no",
+            cost : 500000,
+
+            Drive : function (distance) {
+              
+              console.log("Driving for distance of  km",distance);
+              //console.log("Driving for distance of  km");
+            }
+        };
+        console.log(number);
+        console.log(car);
+        console.log(car.color); // one way of accessing elements of an object
+        console.log(car["cost"]); // another way to access object elements
+
+        car.color = "Blue";
+        car["cost"] = 400000;
+        console.log(car.color); // one way of accessing elements of an object
+        console.log(car["cost"]); // another way to access object elements
+        let distance = window.prompt("enter distance")
+        car.Drive(distance);
+        car.ChangeTyres = function (numberOfTyres){
+            console.log("changed numberOfTyres is",numberOfTyres);
+        }
+        var numberOfTyresChanged = window.prompt("how many tyres to change");
+        car.ChangeTyres(numberOfTyresChanged);
+
+
+
+         
+
+    </script>
+</body>
+</html>

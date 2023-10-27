@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* descendant selector */
+       /* div p{
+            color:red;
+        }*  it means div ke andar jitne paragraph hai ,apply the styling....or div p li{}---means div ke andar jitne p ahin jinke andar li hai uspe apply it/
+       
+        /* child selector */
+        /*div > p{
+            color:red;
+        }* direct child jo hain means ..div ke agla direct p jo hain sif usme...eg. <div><p>  not <div><hi1><p>/
+        
+        
+            /* adjacent sibling selector */
+       /* div + p {
+            color:red;
+        } jiska pichla sibling div ho eg.<p><div> */
+        
+        
+        
+        /* general sibling selector *//* div ke bahar wale saare p pe appply   "~ means negation" */
+       div ~ p {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <h1>Hello World!</h1>
+        <span>
+            <p>Paragraph 4</p>
+        </span>
+    </div>
+       
+    
+    </div>
+    <!--<h1>header1</h1>-->
+    <p>Paragraph 3</p>
+    <p>Paragraph 5</p>
+</body>
+</html>

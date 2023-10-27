@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color:blue;
+        }
+        #div-id{
+            color: blue;
+            font-size: xx-large;
+            font-style: italic;
+           border: 20px solid green;
+        }
+        #child-id{
+           
+            color: yellow;
+            border: inherit;
+        }
+        .sibling{
+            color: revert;
+            font-size: xx-large;
+            display:revert;
+        }
+    </style>
+</head>
+<body>
+    <div id="div-id">Parent Element
+     <div id="child-id">Child Element</div>
+    </div>
+    <div class="sibling">Sibling Element</div>
+    <div class="sibling">Another Sibling Element</div>
+</body>
+</html>

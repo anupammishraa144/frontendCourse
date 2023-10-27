@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    :root{
+        --color-value : green;
+        --fontsize: xx-large;
+    }
+    p{
+        --color-value : red;
+    }   
+    .element1{
+       
+        background-color: aqua;
+        font-size: var(--fontsize);
+        color: var(--color-value);
+       }
+       .element2{
+        background-color: gold;
+        font-size: var(--fontsize);
+        color: var(--color-value);
+       }
+   </style>
+</head>
+<body>
+    <p class="element1">Element 1</p>
+    <div class="element2">Element 2</div>
+</body>
+</html>

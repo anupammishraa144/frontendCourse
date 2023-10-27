@@ -1,0 +1,18 @@
+.heading {
+    color: darkblue;
+    font-size: 50px;
+    /*transition: all 5s;*/
+    /*transition: background-color 1s, font-size 5s;*/
+    transition-property: font-size;
+    transition-duration: 10s;
+    /* transition-delay: 5s;*/
+    transition-timing-function: ease-in-out;
+}
+.heading:hover {
+    color: gold;
+    font-size: 1000px;
+    /*font-style: italic;*/
+    /*background-color: bisque;*/
+
+    
+}

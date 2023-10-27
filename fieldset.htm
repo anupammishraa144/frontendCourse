@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset >
+            <legend>Name</legend>
+            <p>
+                <!-- "readonly" is for one time setting of a value. We cannot change the readonly value.
+                Readonly values are usually set by specifying the value attribute-->
+                <!-- readonly data is sent to the server-->
+                <!-- below example in comment  shows this-->
+                <!--<input type="text" name="Name" placeholder="Enter a name" value="Sachin" maxlength="10" required readonly ></Input>
+                "Hidden" is used to hide the content of form from user but data is sent to server (wich is written in code)-->
+
+                 <!--"" disabled" is used  to disable the control.  If it is text then we cannot enter any text input-->
+                   
+                
+                <!-- when we disable  data is not sent to the server-->
+                <!-- below example in comment  shows this-->
+                <!--<input type="text" name="Name" placeholder="Enter a name" value="Sachin" maxlength="10" required disabled ></Input>-->
+
+
+                <input type="text" name="Name" value ="sachin" placeholder="Enter a name"  maxlength="10" required ></Input>
+                <!-- when "required "attribute is set we have fill that form else we cannot submit. It is a mandatory-->
+            </p>
+            <p>
+                <input type="number" name="Age" placeholder="Enter age"  max="100" min="1"></Input>
+            </p>
+            
+        <fieldset>
+            <legend>Contact</legend>
+            <p>
+                <input type="tel" minlength="10" maxlength="10"></input>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Address</legend>
+        </fieldset>
+        <p>
+            <input type="submit"/>
+        </p>
+       
+    </form>
+</body>
+</html>
